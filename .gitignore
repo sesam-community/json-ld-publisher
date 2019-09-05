@@ -10,3 +10,10 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# local vs code config
+.vscode/
+
+# exclude the executables
+json-ld-publisher.exe
+json-ld-publisher
