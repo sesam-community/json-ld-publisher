@@ -1,5 +1,5 @@
 FROM golang:latest AS builder
-ADD . /src
+ADD ./src /src
 WORKDIR /src
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o /main .
 
