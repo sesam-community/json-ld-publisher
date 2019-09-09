@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.11.x
+  - master
+  
+services:
+  - docker
+  
+script: true
+
+after_success:
+  - bash <(curl -s https://raw.githubusercontent.com/sesam-community/guidelines/master/after_success.sh)
